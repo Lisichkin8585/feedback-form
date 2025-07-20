@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Обратная связь — Миска Риса</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+      background: #fff8f2;
+      color: #333;
+      margin: 0;
+      padding: 0;
+    }
+    .container {
+      max-width: 700px;
+      margin: 50px auto;
+      padding: 40px;
+      background: #ffffff;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    h1 {
+      color: #b45309;
+      font-size: 28px;
+      text-align: center;
+    }
+    p.description {
+      text-align: center;
+      font-size: 16px;
+      margin-bottom: 30px;
+    }
+    label {
+      font-weight: 500;
+      margin-top: 20px;
+      display: block;
+    }
+    input, textarea {
+      width: 100%;
+      padding: 10px;
+      margin-top: 6px;
+      margin-bottom: 20px;
+      border: 1px solid #ccc;
+      border-radius: 6px;
+      font-size: 16px;
+      background: #fffaf5;
+    }
+    button {
+      background: #f97316;
+      color: white;
+      border: none;
+      padding: 12px 20px;
+      border-radius: 6px;
+      font-size: 16px;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #ea580c;
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <h1>🧧 Обратная связь от тебя — наша суперсила!</h1>
+    <p class="description">
+      Преподаватели «Миски Риса» сами предложили собрать честную и тёплую обратную связь — чтобы сделать занятия ещё лучше 🌿<br><br>
+      Форма короткая, на 3–5 минут. Можно анонимно 🙏
+    </p>
+    <form action="https://api.web3forms.com/submit" method="POST">
+      <!-- Web3Forms Token -->
+      <input type="hidden" name="access_key" value="YOUR_ACCESS_KEY_HERE">
+
+      <label>Как тебя зовут?</label>
+      <input type="text" name="Имя" placeholder="Можно просто имя или никнейм">
+
+      <label>Кто твой преподаватель?</label>
+      <input type="text" name="Преподаватель" placeholder="Имя преподавателя">
+
+      <label>Что тебе особенно нравится на занятиях?</label>
+      <textarea name="Нравится" rows="3" placeholder="Опиши, что радует — от шуток до структуры"></textarea>
+
+      <label>Как ты себя чувствуешь на занятиях?</label>
+      <textarea name="Ощущения" rows="3" placeholder="Чувствуешь ли поддержку, мотивацию?"></textarea>
+
+      <label>Что можно улучшить?</label>
+      <textarea name="Улучшения" rows="3" placeholder="Что можно улучшить в занятиях или подходе"></textarea>
+
+      <label>Пару слов про школу «Миска Риса»</label>
+      <textarea name="Про школу" rows="3" placeholder="Впечатления о школе, атмосфере, сайте и т.п."></textarea>
+
+      <label>Контакт (если хочешь)</label>
+      <input type="text" name="Контакт" placeholder="Email / Telegram / любое удобное">
+
+      <button type="submit">Отправить</button>
+    </form>
+  </div>
+</body>
+</html>
