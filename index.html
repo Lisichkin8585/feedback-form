@@ -7,18 +7,29 @@
   <style>
     body {
       font-family: 'Segoe UI', sans-serif;
-      background: #fff8f2;
-      color: #333;
       margin: 0;
       padding: 0;
+      background-image: url('https://lisichkin8585.github.io/feedback-form/chinese_wave_pattern.jpg');
+      background-repeat: repeat;
+      background-size: 100px auto;
+      color: #333;
     }
     .container {
       max-width: 700px;
       margin: 50px auto;
       padding: 40px;
-      background: #ffffff;
+      background: rgba(255, 255, 255, 0.95);
       border-radius: 12px;
       box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+    }
+    .logo {
+      display: flex;
+      justify-content: center;
+      margin-bottom: 30px;
+    }
+    .logo img {
+      max-width: 200px;
+      height: auto;
     }
     h1 {
       color: #b45309;
@@ -61,14 +72,15 @@
 </head>
 <body>
   <div class="container">
+    <div class="logo">
+      <img src="https://lisichkin8585.github.io/feedback-form/photo_2025-07-17_14-57-46.jpg" alt="Миска Риса">
+    </div>
     <h1>🧧 Обратная связь от тебя — наша суперсила!</h1>
     <p class="description">
       Преподаватели «Миски Риса» сами предложили собрать честную и тёплую обратную связь — чтобы сделать занятия ещё лучше 🌿<br><br>
       Форма короткая, на 3–5 минут. Можно анонимно 🙏
     </p>
     <form action="https://formbold.com/s/9ErQR" method="POST">
-      <!-- Web3Forms Token -->
-
       <label>Как тебя зовут?</label>
       <input type="text" name="Имя" placeholder="Можно просто имя или никнейм">
 
